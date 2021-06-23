@@ -1,4 +1,4 @@
-export function calculateBMI(m, h) {
+function calculateBMI(m, h) {
     if(h === 0) {
         throw new Error("Height must be different from zero");
     }
@@ -7,3 +7,5 @@ export function calculateBMI(m, h) {
     }
     return Number((m / h**2).toFixed(2));
 }
+
+exports.calculateBMI = calculateBMI;
